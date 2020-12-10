@@ -14,16 +14,15 @@ fun main() {
     val person7 = Person("Amaliya", 67)
     val person8 = Person("Valeriy", 21)
 
-    var mapPerson = mapOf<Person, String>(
-        person1 to "person1",
-        person2 to "person2",
-        person3 to "person3",
-        person4 to "person4",
-        person5 to "person5",
-        person6 to "person6",
-        person7 to "person7",
-        person8 to "person8"
-    )
+    val mapPerson = mutableMapOf<Person, String>()
+    mapPerson[person1] = "person1"
+    mapPerson[person2] = "person2"
+    mapPerson[person3] = "person3"
+    mapPerson[person4] = "person4"
+    mapPerson[person5] = "person5"
+    mapPerson[person6] = "person6"
+    mapPerson[person7] = "person7"
+    mapPerson[person8] = "person8"
 
     println("Map:\n$mapPerson")
 
